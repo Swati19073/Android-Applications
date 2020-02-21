@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shade3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/profile1">
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:scaleType="centerCrop" />
+
+        <ImageButton
+            android:id="@+id/user_profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:background="@drawable/profile"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_marginTop="-2dp"
+            android:background="@color/profile2"
+
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="76dp"
+                android:hint="@string/profile_name"
+                android:textColor="#fff"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/button6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="80dp"
+                android:layout_toRightOf="@+id/name"
+                android:adjustViewBounds="true"
+                android:clickable="true"
+
+                android:maxWidth="1000dp"
+                android:maxHeight="1000dp"
+                android:onClick="onMyChats"
+                android:scaleType="fitXY"
+                android:src="@drawable/chat3" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <Button
+
+                    android:id="@+id/edit_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_base"
+                    android:clickable="true"
+                    android:layout_weight="2"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:text="@string/profile_b1"
+
+                    android:onClick="oneditprofile"
+                    />
+                <Button
+
+                    android:id="@+id/logout_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_base"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="20dp"
+                    android:text="@string/profile_b2"
+                    android:onClick="onLogout"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundbutton"
+                android:layout_marginTop="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/gendertag"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+
+
+                    android:background="@drawable/gender1"
+
+                    android:layout_weight="0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#fff"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20dp"
+
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:hint="@string/profile_gender"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundbutton"
+                android:layout_marginTop="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/dobtag"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:background="@drawable/dob"
+                    android:layout_weight="0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#fff"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:hint="@string/profile_dob"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundbutton"
+                android:layout_marginTop="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/phonetag"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:background="@drawable/phone1"
+                    android:layout_weight="0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#fff"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:hint="@string/profile_phone"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundbutton"
+                android:layout_marginTop="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/qualificationtag"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:background="@drawable/qualification3"
+                    android:layout_weight="0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:id="@+id/qualification"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#fff"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:hint="@string/profile_qua"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundbutton"
+                android:layout_marginTop="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/skillstag"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:background="@drawable/skill1"
+                    android:layout_weight="0"
+
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:id="@+id/skills"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#fff"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:hint="@string/profile_skills"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/roundbutton"
+                android:layout_marginTop="5dp"
+                android:elevation="4dp"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/expriencetag"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:background="@drawable/experience"
+                    android:layout_weight="0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:id="@+id/experience"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#fff"
+                    android:layout_weight="0"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:textStyle="normal"
+                    android:gravity="center"
+                    android:hint="@string/profile_exp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="5dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/courses_taken"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_base"
+                    android:clickable="true"
+                    android:elevation="4dp"
+
+                    android:text="Courses\nTaken"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="onCourseTaken"
+                    />
+                <Button
+                    android:id="@+id/courses_pub"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:layout_weight="2"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_base"
+                    android:clickable="true"
+                    android:elevation="4dp"
+
+                    android:text="Courses Published"
+                    android:onClick="onCoursePublished"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="5dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/courses_studied"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_base"
+                    android:clickable="true"
+                    android:elevation="4dp"
+
+                    android:text="Completed Courses"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="onCourseCompleted"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

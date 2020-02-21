@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalesPerson">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et1"
+            android:layout_marginTop="30dp"
+            android:hint="item name"
+            android:textSize="15dp"></EditText>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et2"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/et1"
+            android:hint="item quantity"
+            android:textSize="15dp"></EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/total"
+            android:layout_below="@+id/et2"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="Total"
+            android:textSize="20dp"
+            android:background="@drawable/btn_admin"
+            android:textColor="#fff"
+            ></Button>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tablay"
+            android:stretchColumns="*"
+            android:layout_marginTop="350dp">
+
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/row1"
+                >
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:id="@+id/tv1"
+                    android:text="Item Name"
+                    tools:ignore="InvalidId"></TextView>
+
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv2"
+                    android:textSize="15dp"
+                    android:text="Price"></TextView>
+                <TextView android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv3"
+                    android:text="Quantity"></TextView>
+                <TextView android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:id="@+id/tv4"
+                    android:text="Total"></TextView>
+            </TableRow>
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

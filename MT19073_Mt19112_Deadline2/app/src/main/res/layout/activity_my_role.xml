@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyRole">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_btn"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_admin"
+            android:text="Admin"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sm_btn"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@+id/admin_btn"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_admin"
+            android:text="Inventory Manager"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/im_btn"
+            android:layout_below="@+id/sm_btn"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_admin"
+            android:text="Sales Manager"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sp_btn"
+            android:layout_below="@+id/im_btn"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_admin"
+            android:text="Sales Person"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:textStyle="bold">
+
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logout_btn"
+            android:layout_below="@+id/sp_btn"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/btn_admin"
+            android:text="Log out"
+            android:textSize="25dp"
+            android:textColor="#fff"
+            android:textStyle="bold">
+
+        </Button>
+    </RelativeLayout>
+</ScrollView>

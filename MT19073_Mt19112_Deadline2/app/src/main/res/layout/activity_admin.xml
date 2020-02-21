@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin">
+
+    //https://stackoverflow.com/questions/15333529/how-to-provide-shadow-to-button
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_add_itema"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="ADD Item"
+        android:textStyle="bold"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:background="@drawable/btn_admin"
+        android:textColor="#fff"
+        android:textSize="20dp"></Button>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_del_item"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="DELETE ITEM"
+        android:textStyle="bold"
+        android:elevation="5dp"
+        android:padding="10dp"
+        android:background="@drawable/btn_admin"
+        android:layout_below="@+id/btn_add_itema"
+        android:textColor="#fff"
+        android:textSize="20dp"></Button>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_access_emp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="ADD EMP"
+        android:layout_below="@+id/btn_del_item"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:background="@drawable/btn_admin"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:elevation="5dp"></Button>
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_see_report"
+        android:layout_centerHorizontal="true"
+
+        android:elevation="5dp"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/btn_access_emp"
+        android:text="SEE REPORT"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:background="@drawable/btn_admin"
+        android:textColor="#fff"
+        android:textSize="20dp"></Button>
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "902822924159",
+    "firebase_url": "https://mt19073mt19112deadline2.firebaseio.com",
+    "project_id": "mt19073mt19112deadline2",
+    "storage_bucket": "mt19073mt19112deadline2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902822924159:android:db19119b948616a8c2544a",
+        "android_client_info": {
+          "package_name": "com.example.mt19073_mt19112_deadline2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902822924159-g7dodudvgtf0cqstt1lb0fsfbaj4sbec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mt19073_mt19112_deadline2",
+            "certificate_hash": "57d41b68a660857ca94dbfed965ac1bcff2e4288"
+          }
+        },
+        {
+          "client_id": "902822924159-uuf95safpjkumjq9nt6uc4hbdfglvrmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4Usp6wxx_fM48A8xgmQkxHEPhtJRxMuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902822924159-uuf95safpjkumjq9nt6uc4hbdfglvrmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

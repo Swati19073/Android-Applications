@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/shade4">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:layout_width="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:context=".PostCourse"
+                    android:padding="50dp">
+                        <TextView
+                            android:id="@+id/heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/createClassroom"
+                            android:textSize="35dp" />
+
+                        <MultiAutoCompleteTextView
+                            android:id="@+id/course"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/proxima_nova_regular"
+                            android:gravity="center"
+                            android:layout_below="@+id/heading"
+                            android:layout_marginTop="55dp"
+                            android:padding="10dp"
+                            android:background="@drawable/edit_text_border"
+                            android:hint="@string/course_hint"
+
+                            android:textColorHint="#FFFFFF" />
+                        <EditText
+                            android:id="@+id/venue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/course"
+                            android:layout_marginTop="30dp"
+                            android:background="@drawable/edit_text_border"
+                            android:fontFamily="@font/proxima_nova_regular"
+                            android:gravity="center"
+                            android:hint="@string/venue_hint"
+                            android:padding="10dp"
+                            android:textColorHint="#FFFFFF" />
+
+                        <EditText
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/proxima_nova_regular"
+                            android:background="@drawable/edit_text_border"
+                            android:hint="@string/date_hint"
+                            android:layout_below="@+id/venue"
+                            android:padding="10dp"
+                            android:textColorHint="#FFFFFF"
+                            android:editable="false"
+                            android:focusable="false"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/date"
+                            android:orientation="horizontal"
+                            android:weightSum="3"
+                            android:id="@+id/relLay"
+                            android:layout_marginTop="30dp"
+                            >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv2"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:text="@string/textView2PostCourse"
+                                    android:textSize="18dp"
+                                    />
+
+                                <EditText
+                                    android:id="@+id/from"
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:background="@drawable/edit_text_border"
+                                    android:hint="@string/from_hint"
+                                    android:layout_toRightOf="@+id/tv2"
+                                    android:layout_marginRight="10dp"
+                                    android:textColorHint="#FFFFFF"
+                                    android:padding="8dp"
+                                    android:editable="false"
+                                    android:focusable="false"
+                                    android:layout_margin="15dp"/>
+
+                                <EditText
+                                    android:id="@+id/to"
+                                    android:layout_width="match_parent"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:background="@drawable/edit_text_border"
+                                    android:hint="@string/to_hint"
+                                    android:layout_toRightOf="@+id/from"
+                                    android:layout_margin="15dp"
+                                    android:padding="8dp"
+                                    android:textColorHint="#FFFFFF"
+                                    android:editable="false"
+                                    android:focusable="false"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relLay"
+                            android:id="@+id/relLay2"
+                            android:layout_marginTop="20dp"
+                            android:weightSum="4">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/tv"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:text="@string/textViewPostCourse"
+                                    android:layout_weight="1"
+                                    android:textSize="20dp"
+                                    >
+                                </TextView>
+
+                                <Spinner
+                                    android:id="@+id/month"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:textColor="@color/text_view_print"
+                                    android:prompt="@string/month_select"
+                                    android:layout_toRightOf="@+id/tv"
+                                    android:entries="@array/Months"
+                                    android:padding="8dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edit_text_border"
+                                    ></Spinner>
+
+                                <Spinner
+                                    android:id="@+id/week"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/month"
+                                    android:background="@drawable/edit_text_border"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:textColor="@color/text_view_print"
+                                    android:layout_weight="1"
+                                    android:padding="8dp"
+                                    android:prompt="@string/week_select"
+                                    android:entries="@array/Weeks"
+                                    ></Spinner>
+
+                                <Spinner
+                                    android:id="@+id/day"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/edit_text_border"
+                                    android:layout_toRightOf="@+id/week"
+                                    android:fontFamily="@font/proxima_nova_regular"
+                                    android:textColor="@color/text_view_print"
+                                    android:padding="8dp"
+                                    android:prompt="@string/day_select"
+                                    android:entries="@array/Days"
+                                    ></Spinner>
+
+                        </LinearLayout>
+
+
+                        <EditText
+                            android:id="@+id/fees"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/relLay2"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="@font/proxima_nova_regular"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:background="@drawable/edit_text_border"
+                            android:hint="@string/fees_hint"
+                            android:textColorHint="#FFFFFF" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/fees"
+                            android:fontFamily="@font/proxima_nova_bold"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="220dp"
+                            android:layout_marginRight="220dp"
+                            android:layout_marginTop="20dp"
+                            android:padding="10dp"
+                            android:gravity="center"
+                            android:background="@drawable/button_base"
+                            android:onClick="post"
+                            android:text="@string/post_btn" />
+
+                </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

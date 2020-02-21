@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1680BA</color>
+    <color name="colorPrimaryDark">#1680BA</color>
+    <color name="colorAccent">#1680BA</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="deep_purple_500">#673AB7</color>
+    <color name="indigo_500">#3F51B5</color>
+    <color name="blue_500">#2196F3</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="light_blue_500">#03A9F4</color>
+    <color name="hint_white">#7AFFFFFF</color>
+    <color name="text_view_print">#36454f</color>
+    <color name="back_color">#919CBD</color>
+    <color name="others_color">#3e465a</color>
+    <color name="uname_color">#3e465a</color>
+    <color name="color_card">#cff0cc</color>
+    <color name="orange">#F76B1C</color>
+    <color name="bg_chat">#000000</color>
+    <color name="forget_password_clr">#0b5394</color>
+    <color name="pro_color1">#355c7d</color>
+    <color name="pro_color2">#002a4d</color>
+    <color name="pro_text_color">#0e3f66</color>
+
+    <color name="purple">#9B59B6</color>
+    <color name="green">#7ED321</color>
+    <color name="blue">#4A90E2</color>
+    <color name="red">#D0021B</color>
+    <color name="grey">#2E4052</color>
+
+
+    <color name="color_bg_list">#Dbffd6</color>
+    <color name="team_color">#00321e</color>
+    <color name="sign_up">#b06475</color>
+    <color name="dashboard">#A6f7c4</color>
+
+    <color name="home">#5585d9</color>
+    <color name="edit_profile">#78d8f0</color>
+    <color name="profile1">#1c144a</color>
+    <color name="profile2">#78d8f0</color>
+    <color name="profile3">#1c144a</color>
+    <color name="student_home">#e17847</color>
+
+</resources>

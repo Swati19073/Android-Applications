@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:background="@drawable/shade2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:layout_margin="15dp" />
+
+            <EditText
+                android:id="@+id/edName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_border"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="center_horizontal"
+                android:hint="NAME"
+                android:layout_below="@+id/tvSignUp"
+                android:layout_margin="15dp"
+                android:padding="10dp"
+                android:textColor="@color/text_view_print"
+                android:textColorHint="@color/hint_white" />
+
+            <EditText
+                android:id="@+id/edPhoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_border"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="center_horizontal"
+                android:hint="PHONE NUMBER"
+                android:layout_below="@+id/edName"
+                android:layout_margin="15dp"
+                android:textColorHint="@color/hint_white"
+                android:padding="10dp"
+                android:textColor="@color/text_view_print"
+                />
+
+            <EditText
+                android:id="@+id/edDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:background="@drawable/edit_text_border"
+                android:gravity="center_horizontal"
+                android:hint="DATE OF BIRTH"
+                android:layout_below="@+id/edPhoneno"
+                android:layout_margin="15dp"
+                android:textColor="@color/text_view_print"
+                android:textColorHint="@color/hint_white"
+                android:padding="10dp"
+                android:editable="false"
+                android:focusable="false"
+                />
+
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_below="@+id/edDOB"
+                android:layout_margin="15dp"
+                android:paddingLeft="20dp"
+                android:text="Gender:"
+                android:textColor="@color/text_view_print"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edDOB"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/tvGender">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Male"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/proxima_nova_regular"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Female"></RadioButton>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvQual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_below="@+id/tvGender"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="20dp"
+                android:text="Qualification:"
+                android:textColor="@color/text_view_print"
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/spinQual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:textColor="@color/text_view_print"
+                android:layout_below="@+id/radioGroup"
+                android:layout_toRightOf="@+id/tvQual"
+                android:entries="@array/Qualifications"
+                android:prompt="@string/qualification_select"
+                android:layout_margin="18dp"></Spinner>
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/edSkills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_border"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="center_horizontal"
+                android:hint="SKILLS"
+                android:layout_below="@+id/spinQual"
+                android:layout_margin="15dp"
+                android:textColor="@color/text_view_print"
+                android:padding="10dp"
+                android:textColorHint="@color/hint_white"
+                />
+
+            <EditText
+                android:id="@+id/edExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_border"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="center_horizontal"
+                android:hint="EXPERIENCE"
+                android:layout_below="@+id/edSkills"
+                android:layout_margin="15dp"
+                android:textColor="@color/text_view_print"
+                android:padding="10dp"
+                android:textColorHint="@color/hint_white"
+                />
+
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edExp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/text_view_print"
+                android:text="Select a pdf containing all certificates,if any:"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:layout_margin="5dp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:layout_below="@+id/test"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:gravity="center"
+                android:textColor="@color/text_view_print"
+                android:text="No file selected."></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/ll"
+                android:layout_below="@id/notification">
+
+                <Button
+                    android:id="@+id/selectFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_base"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:text="Select File">
+                </Button>
+
+                <Button
+                    android:id="@+id/upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/button_base"
+                    android:fontFamily="@font/proxima_nova_bold"
+                    android:layout_toRightOf="@id/notification"
+                    android:text="Upload">
+                </Button>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll"
+                android:gravity="center"
+                android:text="Submit"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textColor="@android:color/black"
+                android:background="@drawable/button_base"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="20dp"
+                />
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

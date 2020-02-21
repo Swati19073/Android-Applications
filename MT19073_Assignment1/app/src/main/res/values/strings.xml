@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MT19073_Assignment1</string>
+    <string name="calculate">Calculator</string>
+    <string name="ques">Quiz</string>
+    <string name="rating">Rate us</string>
+    <string name="title_activity_mt19073__notes">MT19073_NotesActivity</string>
+    <string name="num1">Enter first number</string>
+    <string name="num2">Enter second number</string>
+    <string name="add">Add</string>
+    <string name="SUBTRACT">SUBTRACT</string>
+    <string name="mutiply">MULTYPLY</string>
+    <string name="divide">DIVIDE</string>
+</resources>

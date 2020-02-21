@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/shade4"
+    android:layout_height="match_parent"
+    tools:context=".CompletedCourses">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/courseStudied_heading"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:background="@drawable/roundbutton"
+                android:textStyle="bold"
+                />
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:background="@android:color/transparent"
+                android:divider="#CCCCCC"
+                android:dividerHeight="1dp"
+                android:paddingLeft="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundbutton"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/proxima_nova_bold"
+                android:textSize="25dp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:text="@string/coursesTaught"
+                android:textStyle="bold"
+                />
+            <ListView
+                android:id="@+id/listView2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxima_nova_regular"
+                android:background="@android:color/transparent"
+                android:divider="#CCCCCC"
+                android:dividerHeight="1dp"
+                android:paddingLeft="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
